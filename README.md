@@ -14,6 +14,11 @@ $ workon dtf
 # Directory Structure
 ```
 DTFBookClub
+├── CODEOWNERS
+├── README.md
+├── lesson1
+├── lesson2
+├── lesson3
 └── setup
 ```
 
