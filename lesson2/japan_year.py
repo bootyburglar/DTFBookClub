@@ -1,21 +1,25 @@
-#請寫一個函式，以參數方式給定西元年份時，轉換程日本的年號
+import sys
+japan_year = {
+    2019:"令和元年",
+    1989:"平成元年",
+    1926:"昭和元年",
+    1912:"大正元年",
+    1868:"明治元年",
+}
 
-year = input('請輸入1869年以上2020年以下的年份')
-
-year_int=int(year)
-
-def year_tasble(year):
-    if year_int in range(1868, 1912):
-        print('你輸入的是西元'+ year +'此年為明治'+ str(year_int-1867)+'年' ) 
-    elif year_int in range(1912, 1926):
-        print('你輸入的是西元'+ year +'此年為大正'+ str(year_int-1911)+'年' ) 
-    elif year_int in range(1926, 1989):
-        print('你輸入的是西元'+ year +'此年為昭和'+ str(year_int-1925)+'年' )
-    elif year_int in range(1989, 2019):
-        print('你輸入的是西元'+ year +'此年為平成'+ str(year_int-1988)+'年' )
-    elif year_int in range(2019, 2021):
-        print('你輸入的是西元'+ year +'此年為令和'+ str(year_int-2018)+'年' ) 
+def to_japan_year(input_year:int):
+    for year,name in japan_year.items():
+        if input_year >= year:
+            year_count = input_year-year
+            if year_count:
+                return name.replace('元',str(input_year-year))
+            return name
     else:
-        print('輸入格式錯誤，無法判斷')
+        return 'not support year'
 
-year_tasble(year)
+def run():
+    ret = to_japan_year(int(sys.argv[1]))
+    print(ret)
+
+if __name__ == '__main__':
+    run()
