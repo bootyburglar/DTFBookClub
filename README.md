@@ -4,7 +4,7 @@
 Hello! This is a repo for David, Tony, and Frank’s weekly book club on software engineering. We want to increase software-engineering literacy for the overall Taiwanese public with relatable anecdotes and translated articles that promote self-learning. The discussion will be in both Chinese and English. If you are new to computer programming and you want to get started, feel free to contact `lu.phrank@gmail.com` to get added to the Google Calendar invite.
 
 # Getting Started
-Make sure you have everything setup specified in [lesson0](/lesson0/README.md). 
+Make sure you have everything setup specified in [lesson0](/lesson0/README.md).
 
 # Directory Structure
 ```

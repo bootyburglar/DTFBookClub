@@ -1,7 +1,7 @@
 # Lesson 0
 
 Make sure you complete all the following prerequisites before starting `lesson 1`.
-## Bash 101 
+## Bash 101
 
 ## Setup Github Access
 
@@ -11,5 +11,4 @@ Make sure you complete all the following prerequisites before starting `lesson 1
 
 ### ohmyzsh
 
-### 
-
+###
