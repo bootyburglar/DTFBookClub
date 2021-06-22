@@ -1,4 +1,4 @@
-# Lesson 1
+# Lesson 1 Python入學基本
 
 # 變數 variable
 任何數據類型或資料類型都可以用變數來代表
