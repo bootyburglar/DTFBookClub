@@ -14,6 +14,7 @@ Please complete the first lesson [here](https://missing.csail.mit.edu/2020/cours
 
 ## Setup Python Virtual Environment
 中文文章讀這邊歐。
+
 Follow the english instructions [here](https://bootyburglar.medium.com/marie-kondo-your-python-dev-environment-391485be9b3f).
 
 
