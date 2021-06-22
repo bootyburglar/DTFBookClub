@@ -22,3 +22,10 @@ Follow the english instructions [here](https://bootyburglar.medium.com/marie-kon
 These are optional installations that can help with developer experience.
 ### ohmyzsh and powerlevel10k
 中文安裝請看[這裡](https://www.notion.so/terminal-oh-my-zsh-powerlevel10k-ba3aff2bfc3643f1a28600617e677d98)。
+
+## Setup for lessons 安裝課程所需的python套件
+``` bash
+$ workon <你的虛擬環境的名字>
+$ cd lesson0\setup
+$ make
+```
