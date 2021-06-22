@@ -1,3 +1,6 @@
+from typing import List
+
+
 # list quiz
 # 1. 定義一個筆電變數 hp_800_g5 500鎂 另一個筆電變數 hp_800_g6 600鎂
 # 2. 比較是不是 hp_800_g6 比較貴
@@ -8,16 +11,18 @@ def list_quiz():
     # code here
     return days_to_buy
 
+
 # dict quiz
-# 1. 建立空的dict叫 intel_chip 
+# 1. 建立空的dict叫 intel_chip
 # 2. 加入kaby lake跟comet lake
 # 3. kaby lake太爛了，改成baby lake
 # 4. baby lake真的太爛了被drop 刪除baby lake
 # 5. intel後來被AMD消滅了 整個intel_chip直接被AMD清空
 def dict_quiz():
-    intel_chip={}
+    intel_chip = {}
     # code here
     return intel_chip
+
 
 # function quiz
 '''
@@ -27,4 +32,8 @@ ex:
 input:  [2015,2016,2021]
 output: ['kaby lake','ice lake',None]
 '''
-# code here
+
+
+def search_cpu_codename(years: List) -> List:
+    # code here
+    return
