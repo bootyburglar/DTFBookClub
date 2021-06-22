@@ -1,4 +1,4 @@
-# Lesson 0 - 安裝和必備知識
+# Lesson 0 - 安裝和必備知識
 Make sure you complete all the following prerequisites before starting `lesson 1`.
 
 ## Operating System
