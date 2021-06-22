@@ -8,16 +8,31 @@ Hello! This is a repo for David, Tony, and Frank’s weekly book club on softwar
 Make sure you have everything setup specified in [lesson0](/lesson0/README.md).
 
 # Directory Structure
-```
+```bash
 DTFBookClub
 ├── CODEOWNERS
 ├── README.md
 ├── lesson0
+│   └── setup
+│       ├── Makefile
+│       ├── README.md
+│       └── requirements.txt
 ├── lesson1
 ├── lesson2
 ├── lesson3
-└── setup
+├── lesson4
+└── tests
 ```
-
+# 流程 SOP
+```bash
+# 沒有自己的 branch 就先做一個自己的 branch
+$ git branch <name>_answers
+# checkout 自己的 branch
+$ git checkout <name>_answers
+# 確定跟 main 更新
+$ git merge main
+# 寫完功課的時候自己跑 `pytest`
+$ python -m pytest tests/test_lesson1.py
+```
 # 行事曆
 我們會把讀書會消息寫在[DTF讀書會行事曆](https://docs.google.com/document/d/1Mw8czzSHou0IzPl497NTWoh2JsW_cphIxfXHlWq0YsE/edit?usp=sharing)。
