@@ -122,7 +122,7 @@ TypeError: 'tuple' object does not support item assignment
 ### 定義一個 dict
 ```python
 #前面他的名字，後面他的內容，內容可以是 int dict list .... 各種形式，但名字只能一個，不能重複。
-{"HP_800_G3":200,"HP_800_G4":300} 
+{"HP_800_G3":200,"HP_800_G4":300}
 a = {"intel_chip":['tiger lake','elder lake']}
 a = dict() #建立空的dict
 ```
@@ -148,7 +148,7 @@ print(HP_Products,' <-- 增加 G6的資料')
 
 HP_Products["HP_800_G6"] = 700
 print(HP_Products, ' <-- 修改 G6的資料')
-> 'HP_800_G3': 200, 'HP_800_G4': 300, 'HP_800_G5': 500, 'HP_800_G6': 700}  <-- 
+> 'HP_800_G3': 200, 'HP_800_G4': 300, 'HP_800_G5': 500, 'HP_800_G6': 700}  <--
 修改 G6的資料
 ```
 ### 確認資料有沒有在裡面
@@ -202,7 +202,7 @@ print(HP_Products,' <-- 清除所有資料')
 for loop 可以應用在 list,str,dict,set,tuple, 主要是用來一個一個查看裡面的資料
 ```python
 cars = ['BMW','Benz','Ford','Toyota','Vlokswagon']
-for car in cars: # car 是代表cars裡面內容的變數，只在for裡面有效，for以外會沒有宣告 <- 就是所謂的區域變數，在：裡面有效而已 
+for car in cars: # car 是代表cars裡面內容的變數，只在for裡面有效，for以外會沒有宣告 <- 就是所謂的區域變數，在：裡面有效而已
     print(car)
 >
 BMW
@@ -233,12 +233,12 @@ def function_name():
 下面的例子是回傳一個字串
 ```python
 def function的名字() -> str:
-     for...: 
+     for...:
          if..:
-             ... 
-         else: 
-             ..... 
-        ..... 
+             ...
+         else:
+             .....
+        .....
     return 'something'
 ```
 有變數的function宣告：
@@ -250,5 +250,3 @@ def break_the_car(cars:list,broken:bool) -> str:
     broken_car_list = ...
     return broken_car_list + 'broken'
 ```
-
-
