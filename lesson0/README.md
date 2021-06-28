@@ -26,7 +26,7 @@ Please complete the first lesson [here](https://missing.csail.mit.edu/2020/cours
 ## Setup Python Virtual Environment 安裝python 虛擬環境
 🚧 Follow the english instructions [here](https://bootyburglar.medium.com/marie-kondo-your-python-dev-environment-391485be9b3f).
 
-🚧 中文文章讀這邊歐。
+🚧 中文文章讀[這邊](https://www.notion.so/Marie-Kondo-Your-Python-Dev-Environment-e7a202fb78a74d64acacd766e6e18e6a)歐。
 
 ## Setup 安裝課程所需的python套件
 ``` bash
