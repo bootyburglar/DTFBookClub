@@ -44,12 +44,16 @@ output: ['kaby lake','ice lake',None]
 
 
 def search_cpu_codename(years: List) -> List:
-    cpu={'kaby lake':2015,'ice lake':2016,'comet lake':2017,'alder lake':2018,'whisky lake':2019}  
-    key='abc'
-    if cpu.values()==years:
-        key=cpu.keys()
-    else:
-        key=None
-    return key
-
+    cpu={'kaby lake':2015,'ice lake':2016,'comet lake':2017,'alder lake':2018,'whisky lake':2019}
+    output=[]
+    for year in years:            
+        for key,values in cpu.items():
+            if values == year:
+            # print (key,values)                
+                output.append(key)
+                break
+        else:
+            output.append(None)                      
+    print(output)
+    return output
     pass
