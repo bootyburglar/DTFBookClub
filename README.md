@@ -36,3 +36,4 @@ $ python -m pytest tests/test_lesson1.py
 ```
 # 行事曆
 我們會把讀書會消息寫在[DTF讀書會行事曆](https://docs.google.com/document/d/1Mw8czzSHou0IzPl497NTWoh2JsW_cphIxfXHlWq0YsE/edit?usp=sharing)。
+# lesson0
