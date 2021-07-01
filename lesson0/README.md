@@ -44,12 +44,16 @@ $ make
 ### VScode Remote WSL and Git Graph
 #### Remote WSL
 (限定使用Windows中 WSL) 可從VS code 中 下載 Remote WSL
-![image](https://user-images.githubusercontent.com/84303723/124104042-72bdfa00-da94-11eb-998f-0ca47d99614f.png)
-下載完後，Vs code左下方會如下圖
-![image](https://user-images.githubusercontent.com/84303723/124104153-91bc8c00-da94-11eb-9aa1-4795cc315663.png)
+
+![image](https://user-images.githubusercontent.com/84303723/124104900-4ce52500-da95-11eb-80a0-1589f2d0f4b7.png)
+
+下載完後，Vs code左下方會如下圖(綠色處)
+
+![image](https://user-images.githubusercontent.com/84303723/124104153-91bc8c00-da94-11eb-9aa1-4795cc315663.png)。
 
 #### Git Graph
 插件模樣
+
 ![image](https://user-images.githubusercontent.com/84303723/124104440-de07cc00-da94-11eb-8c06-fa3a1f2b047b.png)
 
 
