@@ -32,7 +32,7 @@ $ git checkout <name>_answers
 # 確定跟 main 更新
 $ git merge main
 # 寫完功課的時候自己跑 `pytest`
-$ python -m pytest tests/test_lesson1.py
+$ pytest .
 ```
 # 行事曆
 我們會把讀書會消息寫在[DTF讀書會行事曆](https://docs.google.com/document/d/1Mw8czzSHou0IzPl497NTWoh2JsW_cphIxfXHlWq0YsE/edit?usp=sharing)。

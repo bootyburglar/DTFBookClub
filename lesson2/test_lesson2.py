@@ -1,4 +1,4 @@
-from lesson2.convert import convert
+from quiz import convert
 
 
 def test_convert():
