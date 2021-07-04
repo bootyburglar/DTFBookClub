@@ -1,0 +1,26 @@
+name: Autograder
+
+on:
+  push:
+    branches: [ '*answers' ]
+  pull_request:
+    branches: [ '*answers' ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest
+    - name: Test with pytest
+      run: |
+        python -m pytest -v
