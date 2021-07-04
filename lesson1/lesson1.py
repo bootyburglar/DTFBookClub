@@ -15,7 +15,6 @@ def list_quiz():
         day = (hp_800_g5 + 0.25) / 10
     day = math.ceil(day)
     return day
-    pass
 
 
 # dict quiz
@@ -30,7 +29,6 @@ def dict_quiz():
     intel_chip['baby lake'] = intel_chip.pop('kaby lake')
     intel_chip.clear()
     return intel_chip
-    pass
 
 
 # function quiz
@@ -62,4 +60,3 @@ def search_cpu_codename(years: List) -> List:
             output.append(None)
     print(output)
     return output
-    pass
