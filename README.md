@@ -13,15 +13,28 @@ DTFBookClub
 ├── CODEOWNERS
 ├── README.md
 ├── lesson0
+│   ├── README.md
 │   └── setup
 │       ├── Makefile
 │       ├── README.md
 │       └── requirements.txt
 ├── lesson1
+│   ├── README.md
+│   ├── lesson1.py
+│   └── test_lesson1.py
 ├── lesson2
+│   ├── README.md
+│   ├── lesson2.py
+│   └── test_lesson2.py
 ├── lesson3
-├── lesson4
-└── tests
+│   ├── README.md
+│   ├── lesson3.py
+│   └── test_lesson3.py
+└── lesson4
+    ├── README.md
+    ├── lesson4.py
+    └── test_lesson4.py
+
 ```
 # 流程 SOP
 ```bash
