@@ -35,9 +35,8 @@ def fizzbuzz(numbers: List) -> List:
         fizzbuzz([1,2,3,4,5,15])
         >[1,2,'fizz',4,'buzz','fizzbuzz']
     """
-    result = None
     #code here
-    return result
+    pass
 
 
 def vending_machine(product: int, insert: int) -> Dict:
@@ -60,9 +59,8 @@ def vending_machine(product: int, insert: int) -> Dict:
             5:1
         }
     """
-    result = {}
     #code here
-    return result
+    pass
 
 
 def convert(num: int, base: int) -> str:
@@ -96,7 +94,7 @@ def is_prime(num: int) -> bool:
         boolean
     """
     ## code here
-    return
+    pass
 
 
 def eratosthenes(num: int) -> List:
@@ -137,7 +135,7 @@ def fibonacci(num: int) -> int:
     """
     fibonacci_init_list = [1, 1]
     #code here
-    return
+    pass
 
 
 def leap_year() -> List:
@@ -150,7 +148,7 @@ def leap_year() -> List:
         list
     """
     #code here
-    return
+    pass
 
 
 def japan_year(year: int) -> str:
@@ -169,4 +167,4 @@ def japan_year(year: int) -> str:
         > 平成12年
     """
     #code here
-    return
+    pass
