@@ -8,8 +8,10 @@ import math
 # 3. 因為 hp_800_g5 比較便宜，所以買下來但是要加税 0.25鎂
 # 4. 但是每天工作只有 10鎂 幾天才可以買到
 def list_quiz():
-    # code here
-    pass
+    hp_800_g5 = 500
+    hp_800_g6 = 600
+    if hp_800_g6 > hp_800_g5:
+        return math.ceil((hp_800_g5 + 0.25) / 10)
 
 
 # dict quiz
@@ -19,8 +21,8 @@ def list_quiz():
 # 4. baby lake真的太爛了被drop 刪除baby lake
 # 5. intel後來被AMD消滅了 整個intel_chip直接被AMD清空
 def dict_quiz():
-    # code here
-    pass
+    intel_chip = {}
+    return intel_chip
 
 
 # function quiz
@@ -34,5 +36,17 @@ output: ['kaby lake','ice lake',None]
 
 
 def search_cpu_codename(years: List) -> List:
-    # code here
-    pass
+    cpu_codename = {}
+    output = []
+    cpus = ['kaby lake', 'ice lake', 'comet lake', 'alder lake', 'whisky lake']
+    cpu_years = [2015, 2016, 2017, 2018, 2019]
+    # construct dict
+    for i in range(len(cpu_years)):
+        cpu_codename.update({cpu_years[i]: cpus[i]})
+    # construct output
+    for year in years:
+        if year not in cpu_years:
+            output.append(None)
+        else:
+            output.append(cpu_codename[year])
+    return output
