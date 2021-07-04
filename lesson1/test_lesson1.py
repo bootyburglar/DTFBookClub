@@ -1,4 +1,4 @@
-from lesson1.quiz import *
+from lesson1 import *
 
 
 def test_list_quiz():
