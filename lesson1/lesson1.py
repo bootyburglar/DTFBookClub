@@ -8,12 +8,12 @@ import math
 # 3. 因為 hp_800_g5 比較便宜，所以買下來但是要加税 0.25鎂
 # 4. 但是每天工作只有 10鎂 幾天才可以買到
 def list_quiz():
-    hp_800_g5=500
-    hp_800_g6=600
-    day=0
-    if hp_800_g5<hp_800_g6:
-        day=(hp_800_g5+0.25)/10
-    day=math.ceil(day)
+    hp_800_g5 = 500
+    hp_800_g6 = 600
+    day = 0
+    if hp_800_g5 < hp_800_g6:
+        day = (hp_800_g5 + 0.25) / 10
+    day = math.ceil(day)
     return day
     pass
 
@@ -25,9 +25,9 @@ def list_quiz():
 # 4. baby lake真的太爛了被drop 刪除baby lake
 # 5. intel後來被AMD消滅了 整個intel_chip直接被AMD清空
 def dict_quiz():
-    intel_chip={}
-    intel_chip.update({'kaby lake':0,'comet lake':1}) 
-    intel_chip['baby lake']= intel_chip.pop('kaby lake')
+    intel_chip = {}
+    intel_chip.update({'kaby lake': 0, 'comet lake': 1})
+    intel_chip['baby lake'] = intel_chip.pop('kaby lake')
     intel_chip.clear()
     return intel_chip
     pass
@@ -44,16 +44,22 @@ output: ['kaby lake','ice lake',None]
 
 
 def search_cpu_codename(years: List) -> List:
-    cpu={'kaby lake':2015,'ice lake':2016,'comet lake':2017,'alder lake':2018,'whisky lake':2019}
-    output=[]
-    for year in years:            
-        for key,values in cpu.items():
+    cpu = {
+        'kaby lake': 2015,
+        'ice lake': 2016,
+        'comet lake': 2017,
+        'alder lake': 2018,
+        'whisky lake': 2019
+    }
+    output = []
+    for year in years:
+        for key, values in cpu.items():
             if values == year:
-            # print (key,values)                
+                # print (key,values)
                 output.append(key)
                 break
         else:
-            output.append(None)                      
+            output.append(None)
     print(output)
     return output
     pass
