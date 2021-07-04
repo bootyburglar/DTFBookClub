@@ -1,4 +1,5 @@
 from typing import List, Dict, AnyStr
+from math import sqrt
 
 
 def even(numbers: List) -> List:
@@ -13,8 +14,7 @@ def even(numbers: List) -> List:
         even([1,2,3,4,5,6])
         > [2,4,6]
     """
-    #code here
-    pass
+    return [number for number in numbers if number % 2 == 0]
 
 
 def fizzbuzz(numbers: List) -> List:
@@ -36,15 +36,30 @@ def fizzbuzz(numbers: List) -> List:
         >[1,2,'fizz',4,'buzz','fizzbuzz']
     """
     #code here
-    pass
+    isDividBy3 = 'fizz'
+    isDividBy5 = 'buzz'
+    isDividBy3And5 = isDividBy3 + isDividBy5
+
+    answer = []
+
+    for number in numbers:
+        if number % 3 == 0 and number % 5 == 0:
+            answer.append(isDividBy3And5)
+        elif number % 3 == 0:
+            answer.append(isDividBy3)
+        elif number % 5 == 0:
+            answer.append(isDividBy5)
+        else:
+            answer.append(number)
+    return answer
 
 
-def vending_machine(product: int, insert: int) -> Dict:
+def vending_machine(total: int, insert: int) -> Dict:
     """
-    輸入product代表購買總價格 insert代表投入的錢 輸出找的錢 以dict來表示
+    輸入total代表購買總價格 insert代表投入的錢 輸出找的錢 以dict來表示
 
     Args:
-        product (int):購買總價格
+        total (int):購買總價格
         insert (int):投入的錢
 
     Returns:
@@ -59,8 +74,14 @@ def vending_machine(product: int, insert: int) -> Dict:
             5:1
         }
     """
-    #code here
-    pass
+    coins = [5000, 1000, 500, 100, 50, 10, 5, 1]
+    change = {}
+    total_change = insert - total
+    for coin in coins:
+        if total_change >= coin:
+            coin_count, total_change = divmod(total_change, coin)
+            change.update({coin: coin_count})
+    return change
 
 
 def convert(num: int, base: int) -> str:
@@ -79,7 +100,9 @@ def convert(num: int, base: int) -> str:
         > '1010'
     '''
     result = ''
-    #code here
+    while num > 0:
+        num, leave = divmod(num, base)
+        result = str(leave) + result
     return result
 
 
@@ -93,8 +116,10 @@ def is_prime(num: int) -> bool:
     Returns:
         boolean
     """
-    ## code here
-    pass
+    if num <= 1: return False
+    for i in range(2, int(sqrt(num)) + 1):
+        if num % i == 0: return False
+    return True
 
 
 def eratosthenes(num: int) -> List:
@@ -111,8 +136,14 @@ def eratosthenes(num: int) -> List:
         eratosthenes(10)
         > [1,2,3,5,7]
     """
-    #code here
-    pass
+    if num <= 1: return False
+    prime = [2]
+    limit = int(sqrt(num))
+    data = [i for i in range(3, num, 2)]
+    while limit >= data[0]:
+        prime.append(data[0])
+        data = [d for d in data if d % data[0] != 0]
+    return prime + data
 
 
 def fibonacci(num: int) -> int:
@@ -134,8 +165,10 @@ def fibonacci(num: int) -> int:
         > 21
     """
     fibonacci_init_list = [1, 1]
-    #code here
-    pass
+    fib = fibonacci_init_list
+    for i in range(2, num):
+        fib.append(fib[i - 1] + fib[i - 2])
+    return fib[num - 1]
 
 
 def leap_year() -> List:
@@ -147,8 +180,15 @@ def leap_year() -> List:
     Returns:
         list
     """
-    #code here
-    pass
+    def check_leap_year(year: int):
+        if (year % 4 == 0):
+            if ((year % 100 == 0) and year % 400 != 0):
+                return False
+            else:
+                return True
+        return False
+
+    return [year for year in range(1950, 2050 + 1) if check_leap_year(year)]
 
 
 def japan_year(year: int) -> str:
@@ -166,5 +206,18 @@ def japan_year(year: int) -> str:
         japan_year(2000))
         > 平成12年
     """
-    #code here
-    pass
+    japan_year = {
+        2019: "令和元年",
+        1989: "平成元年",
+        1926: "昭和元年",
+        1912: "大正元年",
+        1868: "明治元年",
+    }
+    for _year, name in japan_year.items():
+        if year >= _year:
+            year_count = year - _year
+            if year_count:
+                return name.replace('元', str(year - _year))
+            return name
+    else:
+        return ''
