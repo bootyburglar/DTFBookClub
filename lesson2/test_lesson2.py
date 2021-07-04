@@ -1,4 +1,4 @@
-from quiz import *
+from lesson2 import *
 
 
 def test_even():
