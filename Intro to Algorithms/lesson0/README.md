@@ -55,6 +55,3 @@ $ make
 插件模樣
 
 ![image](https://user-images.githubusercontent.com/84303723/124104440-de07cc00-da94-11eb-8c06-fa3a1f2b047b.png)
-
-
-
