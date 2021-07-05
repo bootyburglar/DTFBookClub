@@ -11,9 +11,9 @@ def list_quiz():
     hp_800_g5 = 500
     hp_800_g6 = 600
     day = 0
-    if hp_800_g5 < hp_800_g6:
-        day = (hp_800_g5 + 0.25) / 10
-    day = math.ceil(day)
+    if hp_800_g5 < hp_800_g6:           #hp_800g5是否比hp_800_g6貴
+        day = (hp_800_g5 + 0.25) / 10   #含稅後總價除以每天收入
+    day = math.ceil(day)                #math.ceil()無條件進位函數
     return day
 
 
@@ -24,10 +24,10 @@ def list_quiz():
 # 4. baby lake真的太爛了被drop 刪除baby lake
 # 5. intel後來被AMD消滅了 整個intel_chip直接被AMD清空
 def dict_quiz():
-    intel_chip = {}
-    intel_chip.update({'kaby lake': 0, 'comet lake': 1})
-    intel_chip['baby lake'] = intel_chip.pop('kaby lake')
-    intel_chip.clear()
+    intel_chip = {}                                         #建立空dict名為intel_chip
+    intel_chip.update({'kaby lake': 0, 'comet lake': 1})    #intel_chip.update()加入"kaby lake""comet lake"項目
+    intel_chip['baby lake'] = intel_chip.pop('kaby lake')   #intel_chip.pop()將kaby lake 取代為baby lake
+    intel_chip.clear()                                      #intel_chip.clear()清除dict中所有項目
     return intel_chip
 
 
@@ -50,13 +50,13 @@ def search_cpu_codename(years: List) -> List:
         'whisky lake': 2019
     }
     output = []
-    for year in years:
-        for key, values in cpu.items():
-            if values == year:
+    for year in years:                      #取出input_list中的項目存進year
+        for key, values in cpu.items():     #取出cpu.items中的項目 分別讀出dic中的key values
+            if values == year:              #判斷values跟input_list的year項目是否相同
                 # print (key,values)
-                output.append(key)
+                output.append(key)          #如果相同存進output_list中
                 break
-        else:
-            output.append(None)
+        else:                               
+            output.append(None)             #如果不同output_list存進None當作查無
     print(output)
     return output

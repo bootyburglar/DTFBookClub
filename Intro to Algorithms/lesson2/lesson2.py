@@ -13,7 +13,11 @@ def even(numbers: List) -> List:
         even([1,2,3,4,5,6])
         > [2,4,6]
     """
-    #code here
+    even=[]
+    for i in numbers:       #do for loop to take value from input list "numbers"
+        if i%2 == 0:        #list value even?
+            even.append(i)  #make even-numbers add to even list
+    return even             #return output
     pass
 
 
@@ -35,7 +39,15 @@ def fizzbuzz(numbers: List) -> List:
         fizzbuzz([1,2,3,4,5,15])
         >[1,2,'fizz',4,'buzz','fizzbuzz']
     """
-    #code here
+    for i in numbers:       #do for loop to take value from input list "numbers"
+        if (i%3==0) and (i%5 ==0):
+            i='fizzbuzz'
+        elif i%5 ==0:
+            i='buzz'
+        elif i%3 ==0:
+            i='fizz'
+            return numbers
+    print(numbers)
     pass
 
 
