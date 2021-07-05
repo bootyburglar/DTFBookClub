@@ -13,29 +13,28 @@ We're currently reading `使用Python演算法入門圖解`. Make sure you have 
 ```bash
 DTFBookClub
 ├── CODEOWNERS
-├── README.md
-├── lesson0
-│   ├── README.md
-│   └── setup
-│       ├── Makefile
+├── Intro\ to\ Algorithms
+│   ├── lesson0
+│   │   ├── README.md
+│   │   └── setup
+│   ├── lesson1
+│   │   ├── README.md
+│   │   ├── lesson1.py
+│   │   └── test_lesson1.py
+│   ├── lesson2
+│   │   ├── README.md
+│   │   ├── lesson2.py
+│   │   └── test_lesson2.py
+│   ├── lesson3
 │       ├── README.md
-│       └── requirements.txt
-├── lesson1
-│   ├── README.md
-│   ├── lesson1.py
-│   └── test_lesson1.py
-├── lesson2
-│   ├── README.md
-│   ├── lesson2.py
-│   └── test_lesson2.py
-├── lesson3
-│   ├── README.md
-│   ├── lesson3.py
-│   └── test_lesson3.py
-└── lesson4
-    ├── README.md
-    ├── lesson4.py
-    └── test_lesson4.py
+│   │   ├── lesson3.py
+│   │   └── test_lesson3.py
+│   └── lesson4
+│       ├── README.md
+│       ├── lesson4.py
+│       └── test_lesson4.py
+├── README.md
+└── _config.yml
 
 ```
 # 流程 SOP
