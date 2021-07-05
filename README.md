@@ -48,11 +48,5 @@ $ git merge main
 # 寫完功課的時候自己跑 `pytest`
 $ pytest .
 ```
-<<<<<<< HEAD
-# 行事曆
-我們會把讀書會消息寫在[DTF讀書會行事曆](https://docs.google.com/document/d/1Mw8czzSHou0IzPl497NTWoh2JsW_cphIxfXHlWq0YsE/edit?usp=sharing)。
-# lesson0
-=======
 # 行事曆 Calendar
 我們會把讀書會消息寫在[工巨人讀書會行事曆](https://docs.google.com/document/d/1Mw8czzSHou0IzPl497NTWoh2JsW_cphIxfXHlWq0YsE/edit?usp=sharing)。
->>>>>>> main
