@@ -79,6 +79,43 @@ def vending_machine(product: int, insert: int) -> Dict:
         }
     """
     #code here
+    dollar={}
+    dollar_total=insert-product
+    
+    r5000=dollar_total//5000  #餘數 
+    q5000=dollar_total%5000   #商數
+    dollar.update({5000:r5000})
+    
+    r1000=dollar_total//1000  #餘數 
+    q1000=dollar_total%1000   #商數
+    dollar.update({1000:r1000})
+    
+    r500=q1000//500  #餘數 
+    q500=q1000%500   #商數
+    dollar.update({500:r500})
+   
+    r100=q500//100  #餘數 
+    q100=q500%100   #商數
+    dollar.update({100:r100})
+
+    r50=q100//50  #餘數 
+    q50=q100 %50   #商數
+    dollar.update({50:r50})
+
+    r10=q50 //10  #餘數 
+    q10=q50 %10   #商數
+    dollar.update({10:r10})
+   
+    r5=q10//5  #餘數 
+    q5=q10%5   #商數
+    dollar.update({5:r5})
+ 
+    r1=q5//1  #餘數 
+    q1=q5%1   #商數
+    dollar.update({1:r1})
+    # print(dollar_total)
+    # print(dollar)
+    return dollar
     
     pass
 
@@ -95,11 +132,14 @@ def convert(num: int, base: int) -> str:
         int 轉換之後的數字
 
     Example:
-        convert(20,2)
+        convert(10,2)
         > '1010'
     '''
     result = ''
     #code here
+
+
+
     return result
 
 
