@@ -7,8 +7,8 @@ def test_even():
 
 
 def test_fizzbuzz():
-    assert fizzbuzz([1, 2, 3, 4, 5, 15, 30
-                     ]) == [1, 2, 'fizz,', 4, 'buzz', 'fizzbuzz', 'fizzbuzz']
+    assert fizzbuzz([1, 2, 3, 4, 5, 15,
+                     30]) == [1, 2, 'fizz', 4, 'buzz', 'fizzbuzz', 'fizzbuzz']
 
 
 def test_vending_machine():
