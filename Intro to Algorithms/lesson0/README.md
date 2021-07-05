@@ -11,9 +11,9 @@ if you're using `macOS`, you're good to go. If you are on `windows`, you can eit
 * Ubuntu in WSL2 [here](https://docs.google.com/document/d/1EFyoKYi9EbRoJIhzJZHb6DwLKQOAy0yQCuj5b2nNQFQ/edit)
 
 ## Bash 101 使用Linux系統一些基本指令
-Please complete the first lesson [here](https://missing.csail.mit.edu/2020/course-shell/) provided by MIT's `Missing Semester` and submit
+Please complete the first lesson [here](https://missing.csail.mit.edu/2020/course-shell/) provided by MIT's `Missing Semester` and finish `lesson0.sh` homework.
 
-請看完 MIT 的 `Missing Semester`[第一堂課](https://missing-semester-zh-hant.github.io/2020/course-shell/)，學習怎麼在Linux裡游泳。
+請看完 MIT 的 `Missing Semester`[第一堂課](https://missing-semester-zh-hant.github.io/2020/course-shell/)，學習怎麼在Linux裡游泳並完成 `lesson0.sh` 的功課。
 
 ## Setup Github Access and Learn Git 學Git跟使用Github
 🚧 申請 `Github` 帳號和學 `git` 基本。
@@ -55,6 +55,3 @@ $ make
 插件模樣
 
 ![image](https://user-images.githubusercontent.com/84303723/124104440-de07cc00-da94-11eb-8c06-fa3a1f2b047b.png)
-
-
-
