@@ -21,7 +21,6 @@ def even(numbers: List) -> List:
         else:
            continue
     return number_01
-    pass
 
 
 def fizzbuzz(numbers: List) -> List:
@@ -42,7 +41,6 @@ def fizzbuzz(numbers: List) -> List:
         fizzbuzz([1,2,3,4,5,15])
         >[1,2,'fizz',4,'buzz','fizzbuzz']
     """
-    #code here
     number_02=[]
     for sum in numbers:
         if sum%3 ==0 and sum %5 ==0:
@@ -54,8 +52,6 @@ def fizzbuzz(numbers: List) -> List:
         else :
             number_02.append(sum)
     return number_02
-
-    pass
 
 
 def vending_machine(product: int, insert: int) -> Dict:
@@ -78,7 +74,6 @@ def vending_machine(product: int, insert: int) -> Dict:
             5:1
         }
     """
-    #code here
     dollar={}
     dollar_total=insert-product
     
@@ -113,11 +108,20 @@ def vending_machine(product: int, insert: int) -> Dict:
     r1=q5//1  #餘數 
     q1=q5%1   #商數
     dollar.update({1:r1})
-    # print(dollar_total)
-    # print(dollar)
-    return dollar
+
+    final_answer={}
+    for key,value in dollar.items():
+        if value != 0:
+            final_answer.update({key:value})
+
+    # 如何使用減的?
+    # for key,value in dollar.items():
+    #     if value ==0:
+    # k=500
+    # del dollar[]
+
     
-    pass
+    return final_answer
 
 
 def convert(num: int, base: int) -> str:
@@ -136,9 +140,9 @@ def convert(num: int, base: int) -> str:
         > '1010'
     '''
     result = ''
-    #code here
-
-
+    while num >0:
+        result = str( num % base) + result
+        num//= base
 
     return result
 
@@ -153,8 +157,11 @@ def is_prime(num: int) -> bool:
     Returns:
         boolean
     """
-    ## code here
-    pass
+    if num//2==1:
+        return(True)
+    else:
+        return(False)
+
 
 
 def eratosthenes(num: int) -> List:
@@ -171,8 +178,12 @@ def eratosthenes(num: int) -> List:
         eratosthenes(10)
         > [1,2,3,5,7]
     """
-    #code here
-    pass
+ #未寫完
+    export=[]
+    for count in range(num):
+        if num%2==1:
+            export.append[num]
+    return export
 
 
 def fibonacci(num: int) -> int:
