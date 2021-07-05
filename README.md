@@ -5,9 +5,9 @@
 Hello! This is a weekly book club on software engineering. We want to increase software-engineering literacy for the overall Taiwanese public in the form of a free online course that promote self-learning. The discussion will be in both Chinese and English. If you are new to software and you want to get started, feel free to contact `lu.phrank@gmail.com` to get added to the Google Calendar invite.
 
 # 怎麼開始呢 Getting Started
-我們現在在看`使用Python演算法入門圖解`,請確定你都做了[lesson0](Intro to Algorithms/lesson0/README.md)的安裝,在開始跑書
+我們現在在看`使用Python演算法入門圖解`,請確定你都做了 [lesson0](Intro&#32;to&#32;Algorithms/lesson0/README.md) 的安裝,在開始跑書
 
-We're currently reading `使用Python演算法入門圖解`. Make sure you have everything setup specified in [lesson0](Intro to Algorithms/lesson0/README.md).
+We're currently reading `使用Python演算法入門圖解`. Make sure you have everything setup specified in [lesson0](Intro&#32;to&#32;Algorithms/lesson0/README.md).
 
 # 結構 Directory Structure
 ```bash
