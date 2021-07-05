@@ -2,6 +2,7 @@ from typing import List, Dict, AnyStr
 
 
 def even(numbers: List) -> List:
+           
     """
     Args:
         numbers (list):一串數字
@@ -13,7 +14,13 @@ def even(numbers: List) -> List:
         even([1,2,3,4,5,6])
         > [2,4,6]
     """
-    #code here
+    number_01=[]
+    for a in numbers:
+        if a %2 ==0:
+           number_01.append(a)
+        else:
+           continue
+    return number_01
     pass
 
 
@@ -36,6 +43,18 @@ def fizzbuzz(numbers: List) -> List:
         >[1,2,'fizz',4,'buzz','fizzbuzz']
     """
     #code here
+    number_02=[]
+    for sum in numbers:
+        if sum%3 ==0 and sum %5 ==0:
+            number_02.append('fizzbuzz')  
+        elif sum %3 ==0:
+            number_02.append('fizz')
+        elif sum %5 ==0:
+            number_02.append('buzz')
+        else :
+            number_02.append(sum)
+    return number_02
+
     pass
 
 
@@ -60,6 +79,7 @@ def vending_machine(product: int, insert: int) -> Dict:
         }
     """
     #code here
+    
     pass
 
 
