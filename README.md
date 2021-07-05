@@ -26,7 +26,7 @@ DTFBookClub
 │   │   ├── lesson2.py
 │   │   └── test_lesson2.py
 │   ├── lesson3
-│       ├── README.md
+│   │   ├── README.md
 │   │   ├── lesson3.py
 │   │   └── test_lesson3.py
 │   └── lesson4
