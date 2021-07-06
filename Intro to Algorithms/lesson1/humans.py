@@ -9,6 +9,7 @@ class Humans:
         print(f"Hello, I am {self.name}")
         print(f"Hello, I am from {self.country}!")
         print(f"I speak {self.language}~")
+        print()
 
 
 class Taiwanese(Humans):
@@ -22,6 +23,9 @@ class Taiwanese(Humans):
                          sex=self.sex,
                          country="Taiwan",
                          language="幹你娘")
+
+    def __str__(self) -> str:
+        return self.name
 
     def chews_betel_nuts(self):
         if self.betel_nuts:
@@ -41,6 +45,13 @@ class Taiwanese(Humans):
         else:
             print("我是共匪 uwu ")
 
+    def speak(self):
+        super().speak()
+        self.chews_betel_nuts()
+        self.eats_stinky_tofu()
+        self.drinks_bubble_tea()
+        print()
+
 
 if __name__ == "__main__":
     frank = Humans("Frank", "M", "America", "America FUCK YEAHHHHH")
@@ -49,4 +60,5 @@ if __name__ == "__main__":
     jacky = Taiwanese("帥哥味全", "M", False, False, False)
     yo = Taiwanese("阿狗的包莖", "M", False, True, False)
     people = [frank, tony, brian, jacky]
-    print([person.speak() for person in people])
+    [person.speak() for person in people]
+    print(yo)
