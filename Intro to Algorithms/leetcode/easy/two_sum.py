@@ -1,5 +1,5 @@
 #   天龍人的方法
-def twoSum_1(self, nums: List[int], target: int) -> List[int]:
+def twoSum_1(self, nums: list, target: int) -> list:
     # O(N)
     # hash lookup
     # memoization
@@ -18,7 +18,7 @@ def twoSum_1(self, nums: List[int], target: int) -> List[int]:
 
 
 # 客家人的方法
-def twoSum_2(self, nums: List[int], target: int) -> List[int]:
+def twoSum_2(self, nums: list, target: int) -> list:
     #O(N^2)
     #先照順序找第一個
     #再找第二個
