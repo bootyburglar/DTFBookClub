@@ -250,3 +250,92 @@ def break_the_car(cars:list,broken:bool) -> str:
     broken_car_list = ...
     return broken_car_list + 'broken'
 ```
+# Class
+用物件的方式來解決問題，稱為物件導向設計（Object-oriented programming, OOP）。
+## class 的組成
+```python
+class 車子:
+    輪子=4
+    窗戶=6
+    後照鏡=2
+    ....
+    def 左轉(self):
+        pass
+
+    def 右轉(self):
+        pass
+
+    def 前進(self):
+        pass
+
+    def 後退(self):
+        pass
+    ........
+```
+## class 初始化
+可以設定初始直在class
+```python
+class 車子:
+    輪子=4
+    窗戶=6
+    後照鏡=2
+    ....
+    def __init__(self,品牌,汽油)
+        self.品牌 = 品牌
+        self.汽油 = 汽油
+
+    def 左轉(self):
+        print('左轉打左轉燈')
+
+    def 右轉(self):
+        print('右轉打右轉燈')
+
+    def 前進(self):
+        print('只能前進沒有煞車')
+
+    def 後退(self):
+        print('只能後退沒有煞車')
+
+    def 加油(self):
+        print('我加'+self.汽油)
+    ........
+```
+How to use
+```python
+我買的車 = 車子(品牌='Benz',汽油='超級柴油')
+我買的車.輪子
+> 4
+我買的車.窗戶
+> 6
+我買的車.前進()
+> 只能前進沒有煞車
+我買的車.加油()
+> 我加超級柴油
+```
+## class 繼承
+假如說今天有一台賓士，他只是品牌不一樣，其他功能都差不多，甚至還有特殊的功能，就可以繼承原本的車子 class 不用再寫一次。
+```python
+class 賓士(車子):   # 括號內填要繼承的 class
+
+    def __init__(self,汽油):
+        # super() 代表繼承的 function
+        super().__init__(汽油=汽油,品牌='賓士')
+
+    # 可以自己加 function
+    def 開天窗(self):
+        print('下雨也開天窗')
+
+    def 左轉(self):
+        print('左轉打蝦趴左轉燈')
+
+
+我的車=賓士(汽油='超級柴油')
+我的車.品牌
+> 賓士
+我的車.前進()
+> 只能前進沒有煞車
+我的車.開天窗()
+> 下雨也開天窗
+我的車.左轉()
+> 左轉打蝦趴左轉燈
+```
