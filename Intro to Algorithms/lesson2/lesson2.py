@@ -14,11 +14,10 @@ def even(numbers: List) -> List:
         > [2,4,6]
     """
     even=[]
-    for i in numbers:       #do for loop to take value from input list "numbers"
-        if i%2 == 0:        #list value even?
-            even.append(i)  #make even-numbers add to even list
-    return even             #return output
-    pass
+    for i in numbers:           #do for loop to take value from input list "numbers"
+        if i%2 == 0:            #list value even?
+            even.append(i)      #make even-numbers add to even list
+    return even                 #return output
 
 
 def fizzbuzz(numbers: List) -> List:
@@ -39,16 +38,18 @@ def fizzbuzz(numbers: List) -> List:
         fizzbuzz([1,2,3,4,5,15])
         >[1,2,'fizz',4,'buzz','fizzbuzz']
     """
-    for i in numbers:       #do for loop to take value from input list "numbers"
-        if (i%3==0) and (i%5 ==0):
-            i='fizzbuzz'
-        elif i%5 ==0:
-            i='buzz'
-        elif i%3 ==0:
-            i='fizz'
-            return numbers
-    print(numbers)
-    pass
+    output=[]
+    for i in numbers:                   #do for loop to take value from input list "numbers"
+        if i%3==0 and i%5==0:           #判斷是否為5跟3的公倍數
+            output.append('fizzbuzz')    
+        elif i%5==0:
+            output.append('buzz')       #判斷是否為5的公倍數
+        elif i%3==0:
+            output.append('fizz')       #判斷是否為3的公倍數
+        else:
+            output.append(i)            #如果都不是照原本list值
+    print(output)
+    return output
 
 
 def vending_machine(product: int, insert: int) -> Dict:
@@ -71,8 +72,21 @@ def vending_machine(product: int, insert: int) -> Dict:
             5:1
         }
     """
-    #code here
-    pass
+    money={}
+    output={5000:0,1000:0,500:0,100:0,50:0,10:0,5:0,1:0,}
+    change=insert-product
+    output[5000]=change//5000
+    output[1000]=change%5000//1000
+    output[500]=change%5000%1000//500
+    output[100]=change%5000%1000%500//100
+    output[50]=change%5000%1000%500%100//50
+    output[10]=change%5000%1000%500%100%50//10
+    output[5]=change%5000%1000%500%100%50%10//5
+    output[1]=change%5000%1000%500%100%50%10%5
+    for k,v in output.items():
+        if v!=0:
+            money.update({k:v})
+    return money
 
 
 def convert(num: int, base: int) -> str:
