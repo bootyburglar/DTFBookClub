@@ -40,4 +40,4 @@ def test_leap_year():
 
 
 def test_japna_year():
-    assert japan_year(2016)
+    assert japan_year(2000) == '平成12年'
