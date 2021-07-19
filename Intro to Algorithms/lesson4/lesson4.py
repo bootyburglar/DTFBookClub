@@ -52,13 +52,56 @@ def binery_search(data: List, value: int) -> int:
     return -1
 
 
+#region Define a data tree
+class TreeNode:
+    def __init__(self, val, left=None, right=None) -> None:
+        self.left = left
+        self.right = right
+        self.val = val
+
+    def insert_left(self, val):
+        if not self.left:
+            self.left = TreeNode(val)
+        else:
+            self.insert_left(val)
+
+    def insert_right(self, val):
+        if not self.right:
+            self.right = TreeNode(val)
+        else:
+            self.insert_right(val)
+
+
+def createTree():
+    tree = TreeNode(0)
+    tree.insert_left(1)
+    tree.insert_right(2)
+    tree.left.insert_left(3)
+    tree.left.insert_right(4)
+    tree.right.insert_left(5)
+    tree.right.insert_right(6)
+    tree.left.left.insert_left(7)
+    tree.left.left.insert_right(8)
+    tree.left.right.insert_left(9)
+    tree.left.right.insert_right(10)
+    tree.right.left.insert_left(11)
+    tree.right.left.insert_right(12)
+    tree.right.right.insert_left(13)
+    tree.right.right.insert_right(14)
+    return tree
+
+
+#endregion
+tree = createTree()
+
+
 def breadth_search():
-    # 課本上的舉例會讓人家看不懂 直接用sentinel_breadth_search?
+    # 用上面的 tree 來做
     pass
 
 
 def depth_search():
-    # 課本上的舉例會讓人家看不懂 直接用sentinel_depth_search?
+    # 用上面的 tree 來做
     pass
 
 
