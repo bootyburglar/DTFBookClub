@@ -217,7 +217,7 @@ def japan_year(year: int) -> str:
         if year >= _year:
             year_count = year - _year
             if year_count:
-                return name.replace('元', str(year - _year))
+                return name.replace('元', str(year - _year + 1))
             return name
     else:
         return ''
