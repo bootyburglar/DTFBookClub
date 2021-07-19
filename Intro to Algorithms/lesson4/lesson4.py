@@ -17,7 +17,10 @@ def linear_search(data: List, value: int) -> int:
         linear_search([1,2,3,4,5],3)
         > 2
     """
-    pass
+    for index, val in enumerate(data):
+        if val == value:
+            return index
+    return -1
 
 
 def binery_search(data: List, value: int) -> int:
@@ -36,7 +39,17 @@ def binery_search(data: List, value: int) -> int:
         linear_search([1,2,3,4,5],3)
         > 2
     """
-    pass
+    left = 0
+    right = len(data) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if data[mid] == value:
+            return mid
+        elif data[mid] < value:
+            left = mid + 1
+        elif data[mid] > value:
+            right = mid - 1
+    return -1
 
 
 def breadth_search():
